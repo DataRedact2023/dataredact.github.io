@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Sound demos for "Data Redaction from Conditional Generative Models"</title>
+
+  </head>
+
+    <h2>Sound demos for "Data Redaction from Conditional Generative Models"</h2>
+
+  <!-- <body style="font-family: Helvetica"> -->
+  <body style="font-family: Palatino, serif">
+
+
+    <br> </br>
+    <h3> Section &#8544;: Redacting speaker 1040 </h3>
+    The samples for redacting speaker 1040 are shown below. 
+    With the base configuration we can redact a fraction of conditionals but the generation quality is much worse than the pre-trained model. 
+    By improving capacity both generation and redaction quality are improved. 
+    Improved voice cloning improves the perceptual generation quality. 
+    The non-uniform distillation loss ($\lambda_i$-order) improves generation quality by a huge gap. 
+    <br> </br>
+
+    <b> Synthesized LJSpeech samples (training voice): we expect samples after redaction have similar quality as the pre-trained ones. </b>
+    <table>
+      <tbody>
+        <tr>
+          <th align="middle"></th>
+          <th align="middle">pre-trained model</th>
+          <th align="middle">redaction (base)</th>
+          <th align="middle">redaction (improved capacity)</th>
+          <th align="middle">redaction (improved voice cloning)</th>
+          <th align="middle">redaction (non-uniform distillation)</th>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 1</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0004.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040-LJ001-0004.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040-LJ001-0004.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040-LJ001-0004.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040-LJ001-0004.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <th align="right">&nbsp;&nbsp;sample 2</th>
+            <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0005.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040-LJ001-0005.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040-LJ001-0005.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040-LJ001-0005.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040-LJ001-0005.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <th align="right">&nbsp;&nbsp;sample 3</th>
+            <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0006.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040-LJ001-0006.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040-LJ001-0006.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040-LJ001-0006.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040-LJ001-0006.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br> </br>
+    
+    <b> Synthesized LibriTTS speaker-1040 samples (redacted voice): we expect samples after redaction are very different as the pre-trained ones and more similar to LJSpeech voices. </b>
+    <table>
+      <tbody>
+        <tr>
+          <th align="middle"></th>
+          <th align="middle">pre-trained model</th>
+          <th align="middle">redaction (base)</th>
+          <th align="middle">redaction (improved capacity)</th>
+          <th align="middle">redaction (improved voice cloning)</th>
+          <th align="middle">redaction (non-uniform distillation)</th>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 1</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-pretrained-1040_133433_000113_000002.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040_133433_000113_000002.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040_133433_000113_000002.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040_133433_000113_000002.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040_133433_000113_000002.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 2</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-pretrained-1040_133433_000168_000001.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040_133433_000168_000001.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040_133433_000168_000001.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040_133433_000168_000001.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040_133433_000168_000001.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 3</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-pretrained-1040_133433_000103_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040_133433_000103_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040_133433_000103_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040_133433_000103_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040_133433_000103_000000.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 4</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-pretrained-1040_133433_000148_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040_133433_000148_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040_133433_000148_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040_133433_000148_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040_133433_000148_000000.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 5</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-pretrained-1040_133433_000150_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="base-redacted-1040_133433_000150_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="capacity-redacted-1040_133433_000150_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="improvedVC-redacted-1040_133433_000150_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="nonuniform-redacted-1040_133433_000150_000000.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <br> </br>
+    <h3> Section &#8545;: Redacting other speakers </h3>
+    The samples for redacting other speakers are shown below. We use the improved capacity configuration. 
+    Both generation and redaction quality are good.
+    <br> </br>
+
+    <b> Synthesized LJSpeech samples (training voice): we expect samples after redaction have similar quality as the pre-trained ones. </b>
+    <table>
+      <tbody>
+        <tr>
+          <th align="middle"></th>
+          <th align="middle">pre-trained model</th>
+          <th align="middle">redaction (improved capacity)</th>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 1</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0004.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1737-LJ001-0004.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <th align="right">&nbsp;&nbsp;sample 2</th>
+            <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0005.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1737-LJ001-0005.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <th align="right">&nbsp;&nbsp;sample 3</th>
+            <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0006.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1737-LJ001-0006.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 4</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0004.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1926-LJ001-0004.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <th align="right">&nbsp;&nbsp;sample 5</th>
+            <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0005.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1926-LJ001-0005.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <th align="right">&nbsp;&nbsp;sample 6</th>
+            <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-LJ001-0006.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1926-LJ001-0006.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br> </br>
+    
+    <b> Synthesized LibriTTS samples (redacted voices): we expect samples after redaction are very different as the pre-trained ones and more similar to LJSpeech voices. </b>
+    <table>
+      <tbody>
+        <tr>
+          <th align="middle"></th>
+          <th align="middle">pre-trained model</th>
+          <th align="middle">redaction (improved capacity)</th>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 1</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-1737_146161_000000_000001.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1737_146161_000000_000001.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 2</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-1737_146161_000000_000002.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1737_146161_000000_000002.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 3</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-1737_146161_000001_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1737_146161_000001_000000.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 4</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-1926_143879_000005_000000.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1926_143879_000005_000000.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 5</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-1926_143879_000005_000002.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1926_143879_000005_000002.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;&nbsp;sample 6</th>
+          <td><audio controls style="width: 250px; height: 50px"><source src="pretrained-1926_143879_000005_000006.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="redacted-1926_143879_000005_000006.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
